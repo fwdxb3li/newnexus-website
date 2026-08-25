@@ -98,6 +98,8 @@ section { padding: clamp(56px, 7vw, 104px) 0; position: relative; }
 .bg-elevated { background: var(--navy-900); }
 .bg-white { background: var(--paper); }
 .bg-wash { background: linear-gradient(180deg, #fbfaf6 0%, #f3f1ea 100%); }
+.wash-photo { background-size: cover; background-position: center; }
+.wash-photo::before { display: none; }
 .bg-wash::before {
   content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.05;
   background-image: radial-gradient(circle, var(--ink-900) 1px, transparent 1px);
