@@ -355,6 +355,9 @@ section { padding: clamp(56px, 7vw, 104px) 0; position: relative; }
 @media (max-width: 600px) { .field-row { grid-template-columns: 1fr; } }
 .form-note { font-size: 12.5px; color: var(--silver-600); margin-top: 14px; }
 .form-success { display: none; padding: 18px 20px; border-radius: 16px; background: rgba(198,154,61,0.14); border: 1px solid rgba(217,185,107,0.4); color: var(--silver-200); font-size: 14px; }
+.form-error { display: none; padding: 14px 18px; border-radius: 14px; background: rgba(220,80,80,0.12); border: 1px solid rgba(220,80,80,0.35); color: var(--silver-200); font-size: 13px; margin-top: 14px; }
+.form-error.show { display: block; }
+.btn[disabled] { opacity: 0.6; pointer-events: none; }
 .form-success.show { display: block; }
 
 /* ---------- Footer ---------- */

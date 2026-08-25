@@ -47,14 +47,39 @@ document.querySelectorAll('.nav-links a, .menu-links a').forEach(a => {
   if (href === current) a.classList.add('active');
 });
 
-// Contact form (no backend wired yet — shows confirmation locally)
+// Contact form — submits to Web3Forms
 const contactForm = document.querySelector('#contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const success = document.querySelector('.form-success');
-    contactForm.reset();
-    contactForm.style.display = 'none';
-    if (success) success.classList.add('show');
+    const error = document.querySelector('.form-error');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalHTML = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    if (error) error.classList.remove('show');
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(contactForm)
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          contactForm.reset();
+          contactForm.style.display = 'none';
+          if (success) success.classList.add('show');
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalHTML;
+          if (error) error.classList.add('show');
+        }
+      })
+      .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHTML;
+        if (error) error.classList.add('show');
+      });
   });
 }

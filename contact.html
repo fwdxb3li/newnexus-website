@@ -114,6 +114,10 @@
             <div class="core" style="padding:36px;">
               <h4>Send a Business Inquiry</h4>
               <form id="contact-form" class="mt-24">
+                <input type="hidden" name="access_key" value="6f47ce86-f98f-4f73-8f58-c150882623fc">
+                <input type="hidden" name="subject" value="New Business Inquiry — New Nexus Website">
+                <input type="hidden" name="from_name" value="New Nexus Website">
+                <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
                 <div class="field-row">
                   <div class="field">
                     <label for="name">Full Name</label>
@@ -149,7 +153,8 @@
                   <textarea id="message" name="message" rows="4" placeholder="Tell us about your inquiry" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Submit Inquiry<span class="btn-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
-                <p class="form-note">This form isn't yet wired to a mailbox or CRM — connect it to your backend of choice before launch.</p>
+                <p class="form-note">We typically respond within 1–2 business days.</p>
+                <p class="form-error">Something went wrong sending your message. Please try again, or email us directly.</p>
               </form>
               <div class="form-success">Thank you — your inquiry has been recorded. Our team will reach out shortly.</div>
             </div>

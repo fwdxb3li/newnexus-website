@@ -114,6 +114,10 @@
             <div class="core" style="padding:36px;">
               <h4>提交商务咨询</h4>
               <form id="contact-form" class="mt-24">
+                <input type="hidden" name="access_key" value="6f47ce86-f98f-4f73-8f58-c150882623fc">
+                <input type="hidden" name="subject" value="新枢纽官网 — 新的商务咨询">
+                <input type="hidden" name="from_name" value="New Nexus Website">
+                <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
                 <div class="field-row">
                   <div class="field">
                     <label for="name">姓名</label>
@@ -149,7 +153,8 @@
                   <textarea id="message" name="message" rows="4" placeholder="请告诉我们您的咨询内容" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">提交咨询<span class="btn-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
-                <p class="form-note">此表单尚未连接至邮箱或 CRM 系统 — 正式上线前请连接至您选定的后端系统。</p>
+                <p class="form-note">我们通常会在 1-2 个工作日内回复。</p>
+                <p class="form-error">提交失败，请重试或直接发送邮件给我们。</p>
               </form>
               <div class="form-success">感谢您的咨询 — 我们已收到您的信息，团队将尽快与您联系。</div>
             </div>
