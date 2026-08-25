@@ -401,6 +401,16 @@ footer { background: var(--navy-950); padding: 80px 0 28px; position: relative; 
   box-shadow: 0 30px 80px -30px rgba(0,0,0,0.7);
 }
 .compare { width: 100%; min-width: 860px; border-collapse: separate; border-spacing: 0; }
+.compare-basic { min-width: 0; }
+.compare-basic tbody th { max-width: none; }
+@media (max-width: 480px) {
+  .compare-basic th, .compare-basic td { padding: 12px 8px; font-size: 12px; }
+  .compare-basic thead th { padding: 16px 8px 12px; font-size: 10px; }
+  .compare-basic .nx-head-badge { font-size: 12.5px; gap: 5px; }
+  .compare-basic .nx-head-badge svg { width: 13px; height: 13px; }
+  .compare-basic .verdict-row td { font-size: 1rem; }
+  .compare-basic .verdict-row td.col-nx { font-size: 1.1rem; }
+}
 .compare th, .compare td {
   padding: 16px 18px; text-align: center; font-size: 13.5px;
   border-bottom: 1px solid var(--line-dark); color: var(--silver-400);
