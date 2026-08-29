@@ -78,6 +78,10 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; line-height
 .on-dark .eyebrow .dot { background: var(--gold-300); }
 
 h1 { font-size: clamp(2.6rem, 5.4vw, 5rem); }
+@media (max-width: 600px) {
+  h1 { font-size: clamp(1.9rem, 9vw, 2.6rem); }
+  h2 { font-size: clamp(1.5rem, 7vw, 2rem); }
+}
 h2 { font-size: clamp(2rem, 3.6vw, 3.2rem); }
 h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); }
 h4 { font-size: 1.05rem; }
