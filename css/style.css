@@ -386,6 +386,9 @@ section { padding: clamp(56px, 7vw, 104px) 0; position: relative; }
 .case-spec-row:last-child { border-bottom: none; }
 .case-spec-row .spec-label { color: var(--ink-700); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap; }
 .case-spec-row .spec-value { color: var(--silver-600); }
+.on-dark .case-spec-row { border-bottom-color: var(--line-dark-strong); }
+.on-dark .case-spec-row .spec-label { color: var(--silver-200); }
+.on-dark .case-spec-row .spec-value { color: var(--silver-500); }
 .form-success { display: none; padding: 18px 20px; border-radius: 16px; background: rgba(198,154,61,0.14); border: 1px solid rgba(217,185,107,0.4); color: var(--silver-200); font-size: 14px; }
 .form-error { display: none; padding: 14px 18px; border-radius: 14px; background: rgba(220,80,80,0.12); border: 1px solid rgba(220,80,80,0.35); color: var(--silver-200); font-size: 13px; margin-top: 14px; }
 .form-error.show { display: block; }
