@@ -2,7 +2,7 @@
    New Nexus — Design System
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;900&display=swap');
 
 :root {
   /* Palette — navy blue / black / white / gold */
@@ -64,7 +64,8 @@ button { font: inherit; cursor: pointer; }
 input, textarea, select { font: inherit; }
 
 /* ---------- Type scale ---------- */
-h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; line-height: 1.08; letter-spacing: -0.01em; }
+h1, h2, h3, h4 { font-family: var(--font-sans); font-weight: 700; line-height: 1.08; letter-spacing: -0.015em; color: var(--ink-900); }
+h3, h4 { font-weight: 600; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 7px 16px; border-radius: 999px;
@@ -416,7 +417,9 @@ footer { background: var(--navy-950); padding: 80px 0 28px; position: relative; 
 html[lang="zh-CN"] { --font-display: 'Noto Sans SC', 'Fraunces', serif; --font-sans: 'Noto Sans SC', -apple-system, sans-serif; }
 html[lang="ar"] { --font-display: 'Tajawal', 'Fraunces', serif; --font-sans: 'Tajawal', -apple-system, sans-serif; }
 html[lang="zh-CN"] h1, html[lang="zh-CN"] h2, html[lang="zh-CN"] h3, html[lang="zh-CN"] h4 { font-weight: 700; letter-spacing: 0; }
+html[lang="zh-CN"] h3, html[lang="zh-CN"] h4 { font-weight: 600; }
 html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4 { font-weight: 700; letter-spacing: 0; }
+html[lang="ar"] h3, html[lang="ar"] h4 { font-weight: 600; }
 html[dir="rtl"] .eyebrow .dot { order: 2; }
 html[dir="rtl"] .compare tbody th, html[dir="rtl"] .compare thead th:first-child, html[dir="rtl"] .compare .group-row th {
   left: auto; right: 0; box-shadow: -8px 0 16px -8px rgba(0,0,0,0.5);
@@ -576,7 +579,7 @@ html[dir="rtl"] .lang-menu { right: auto; left: 0; }
   border: 1px solid rgba(217,185,107,0.35);
 }
 .verdict-banner h3 { color: var(--white); font-size: clamp(1.15rem, 1.8vw, 1.5rem); max-width: 34ch; }
-.verdict-banner .gold-word { color: var(--gold-300); font-style: italic; }
+.verdict-banner .gold-word { color: var(--gold-300); }
 
 /* ---------- Competitor type cards ---------- */
 .rival-card { position: relative; }
