@@ -226,7 +226,7 @@ section { padding: clamp(56px, 7vw, 104px) 0; position: relative; }
 .nav-actions { display: flex; align-items: center; gap: 10px; }
 .nav-hamburger { display: none; }
 
-@media (max-width: 980px) {
+@media (max-width: 1180px) {
   .nav-links, .nav-actions .btn { display: none; }
   .nav-hamburger { display: flex; }
 }
