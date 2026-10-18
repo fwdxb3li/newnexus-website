@@ -621,3 +621,17 @@ html[dir="rtl"] .wa-tooltip { right: auto; left: calc(100% + 12px); }
   .wa-float svg { width: 27px; height: 27px; }
   .wa-tooltip { display: none; }
 }
+
+/* ---------- Product specification table ---------- */
+.spec-card .core { padding: 0; overflow: hidden; }
+.spec-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.spec-table th, .spec-table td { padding: 16px 24px; text-align: left; border-bottom: 1px solid var(--line-light); vertical-align: top; line-height: 1.5; }
+.spec-table thead th { font-size: 11.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-500); background: var(--section-bg); }
+.spec-table tbody th { width: 36%; font-weight: 600; color: var(--ink-900); }
+.spec-table tbody td { color: var(--ink-700); }
+.spec-table tbody tr:last-child th, .spec-table tbody tr:last-child td { border-bottom: none; }
+html[dir="rtl"] .spec-table th, html[dir="rtl"] .spec-table td { text-align: right; }
+@media (max-width: 600px) {
+  .spec-table th, .spec-table td { padding: 12px 16px; font-size: 13.5px; }
+  .spec-table tbody th { width: 42%; }
+}
