@@ -219,7 +219,7 @@ section { padding: clamp(56px, 7vw, 104px) 0; position: relative; }
 .brand .mark { width: 30px; height: 30px; object-fit: cover; border-radius: 7px; flex-shrink: 0; }
 .nav-links { display: flex; align-items: center; gap: 2px; }
 .nav-links a {
-  padding: 9px 16px; border-radius: 999px; font-size: 13.5px; color: var(--silver-300);
+  padding: 9px 12px; border-radius: 999px; font-size: 13.5px; color: var(--silver-300);
   transition: color 0.4s var(--ease-fluid), background 0.4s var(--ease-fluid);
 }
 .nav-links a:hover, .nav-links a.active { color: var(--white); background: var(--glass-dark); }
