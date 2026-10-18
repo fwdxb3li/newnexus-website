@@ -658,3 +658,10 @@ html[dir="rtl"] .case-spec-row .spec-value { text-align: left; }
 .gallery-4 a { display: block; border-radius: 14px; overflow: hidden; aspect-ratio: 4 / 3; }
 .gallery-4 img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s var(--ease-fluid); }
 .gallery-4 a:hover img { transform: scale(1.04); }
+
+/* ---------- Loading port cards (compact) ---------- */
+.port-grid .core { display: flex; align-items: center; gap: 16px; padding: 20px 24px; }
+.port-grid .card-icon { margin: 0; flex-shrink: 0; }
+.port-grid h3 { font-size: 1.2rem; margin: 0; }
+.port-grid p { margin: 2px 0 0; font-size: 15px; }
+@media (max-width: 900px) { .port-grid { gap: 12px; } }
