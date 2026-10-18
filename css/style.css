@@ -698,3 +698,5 @@ html[dir="rtl"] .case-spec-row .spec-value { text-align: left; }
 .case-grid .case-docs { margin-top: 12px; padding-top: 12px; }
 .case-grid .doc-link { margin-top: 8px; }
 @media (max-width: 900px) { .case-grid { gap: 12px; } }
+/* full-width credential cards: keep the certificate preview a readable size */
+.compact-grid .doc-thumb { max-width: 360px; }
