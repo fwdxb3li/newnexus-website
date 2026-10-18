@@ -686,3 +686,15 @@ html[dir="rtl"] .case-spec-row .spec-value { text-align: left; }
 .compact-grid .doc-thumb { max-height: 200px; }
 .compact-grid .doc-thumb img { height: 200px; object-fit: cover; object-position: center top; }
 .compact-grid { align-items: start; }
+
+/* ---------- Trading case cards (compact) ---------- */
+.case-grid { align-items: start; }
+.case-grid .core { padding: 20px 24px; }
+.case-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.case-head .tag { flex-shrink: 0; }
+.case-head h3 { font-size: 1.2rem; margin: 0; }
+.case-grid .case-spec { margin-top: 12px; }
+.case-grid .case-spec-row { padding: 7px 0; }
+.case-grid .case-docs { margin-top: 12px; padding-top: 12px; }
+.case-grid .doc-link { margin-top: 8px; }
+@media (max-width: 900px) { .case-grid { gap: 12px; } }
